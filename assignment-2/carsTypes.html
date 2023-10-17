@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pagina mea HTML</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!--Inceput Header-->
+    <header>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">CarsIte</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="carsTypes.html"
+                >Tipuri de masini</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" toggle="tooltip" title="In progress!" href="#"
+                >Vanzari</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" toggle="tooltip" title="In progress!" href="#"
+                >Calculator carburant</a
+              >
+            </li>
+          </ul>
+          <div class="form-inline my-3 my-lg-0">
+            <div class="nav-item mx-1">
+              <div class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-light mx-2"
+                  data-toggle="modal"
+                  data-target="#loginModal"
+                >
+                  Login
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-light"
+                  data-toggle="modal"
+                  data-target="#signInModal"
+                >
+                  Sign in
+                </button>
+              </div>
+              <!-- Login Modal -->
+              <div
+                class="modal fade bd-example-modal-sm"
+                id="loginModal"
+                tabindex="-1"
+                role="dialog"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-sm"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="LoginModalTitle">
+                        Login form
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span>&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="px-4 py-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="email">Email address</label>
+                          <input
+                            type="email"
+                            class="form-control mb-2"
+                            id="email"
+                            placeholder="email@example.com"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="mb-2" for="password">Password</label>
+                          <input
+                            type="password"
+                            class="form-control mb-2"
+                            id="password"
+                            placeholder="Password"
+                          />
+                          <div class="form-check">
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="dropdownCheck"
+                            />
+                            <label
+                              class="form-check-label mx-2"
+                              for="dropdownCheck"
+                            >
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+                      </form>
+                      <a
+                        class="d-flex justify-content-center text-muted"
+                        href="#"
+                        >Forgot password?</a
+                      >
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button type="button" class="btn btn-dark">Login</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Login Modal-->
+              <!--Signin Modal-->
+              <div
+                class="modal fade bd-example-modal-sm"
+                id="signInModal"
+                tabindex="-1"
+                role="dialog"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-sm"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">
+                        Sign in form
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span>&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="px-4 py-3">
+                        <div class="form-group">
+                          <label class="mb-2" for="username">Username</label>
+                          <input
+                            type="text"
+                            class="form-control mb-2"
+                            id="username"
+                            placeholder="Username"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="mb-2" for="email">Email address</label>
+                          <input
+                            type="email"
+                            class="form-control mb-2"
+                            id="email"
+                            placeholder="email@example.com"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="mb-2" for="password">Password</label>
+                          <input
+                            type="password"
+                            class="form-control mb-2"
+                            id="password"
+                            placeholder="Password"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="mb-2" for="confirm-password"
+                            >Confirm password</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="confirm-password"
+                            placeholder="Confirm password"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button type="button" class="btn btn-dark">
+                        Sign in
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Signin Modal-->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Sfarsit Header-->
+
+    <!--Intro-->
+    <div>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              width="100%"
+              height="700px"
+              src="https://www.motortrend.com/uploads/2023/09/every-type-of-car-motortrend.jpg?fit=around%7C875:492"
+              alt="car-1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              width="100%"
+              height="700px"
+              src="https://www.motortrend.com/uploads/sites/21/2020/08/009-2021-dodge-durango-line-up.jpg?interpolation=lanczos-none&fit=around%7C660:371?fit=around%7C875:492"
+              alt="car-2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              width="100%"
+              height="700px"
+              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/vehicle-types-1548954237.jpg"
+              alt="car-3"
+            />
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 style="font-weight: 400">Descopera fiecare tip de masina</h1>
+      </div>
+    </section>
+    <!--Sfarsit intro-->
+
+    <!--Content-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center mt-5">SUV</h1>
+          <p>
+            De departe cel mai popular stil de caroserie, SUV-urile sunt
+            apreciate pentru versatilitatea lor. Ca și alte tipuri de mașini,
+            vehiculele utilitare sport au o istorie complexă. Inițial bazate pe
+            camioane, vehicule full-frame, construite în principal pentru a
+            traversa teren accidentat și pentru a deține o mulțime de lucruri
+            (lăsând rafinamentul călătoriei și facilitățile pentru alte
+            stiluri), majoritatea SUV-urilor sunt acum vehicule unibody, cum ar
+            fi sedanurile și hatchback-urile. Chiar și așa, natura aventuroasă a
+            acestor SUV-uri timpurii pătrunde în imaginea lor de astăzi.
+            SUV-urile body-on-frame încă există, dar cele mai comune SUV-uri de
+            pe șosea astăzi (uneori denumite crossovere) au o mulțime de
+            caracteristici și oferă un confort superior pe șosea.
+          </p>
+
+          <button type="button" class="btn btn-block btn-outline-dark">
+            SUV
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img
+            class="img-fluid w-100 rounded"
+            src="https://www.motortrend.com/uploads/2023/02/Plugin-Hybrid-SUVs.jpg?fit=around%7C875:492"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center mt-5">Sedan</h1>
+          <p>
+            Înainte ca SUV-urile crossover să preia drumul, sedanul cu patru uși
+            era tipul de vehicul predominant. În mod tradițional, sedanurile
+            sunt modele cu trei cutii, cu motorul în față, cabina în centru și
+            portbagajul în spate. Șansele sunt dacă cereți cuiva născut înainte
+            de 2008 să deseneze o mașină generică, această formă este ceea ce vă
+            vor prezenta. Sedanurile au căzut în dizgrația cumpărătorilor (și
+            producătorilor), deoarece SUV-urile au devenit proeminente, dar
+            câteva rămân, în special cele vândute ieftin flotelor sau cele cu
+            performanțe ridicate.
+          </p>
+          <button type="button" class="btn btn-block btn-outline-dark">
+            Sedan
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img
+            class="img-fluid w-100 rounded"
+            src="https://www.motortrend.com/uploads/sites/5/2017/02/High-Performance-Sports-Sedans-front-three-quarter-02-e1488226122368.jpg?fit=around%7C875:492"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center mt-5">Truck</h1>
+          <p>
+            În timp ce SUV-urile au cel mai mare număr de variante pe șosele,
+            modelele de camioane le depășesc în S.U.A. Din punct de vedere
+            istoric, camionetele erau vehicule de lucru care puteau duce un
+            echipaj la un șantier și își puteau aduce toate echipamentele cu ei
+            într-un pat deschis în spatele cabinei. La fel cum SUV-urile au
+            dobândit o reputație pentru aventură, pickup-urile au devenit un
+            simbol al muncii grele și al practicității cu care tot mai mulți
+            oameni doreau să fie asociați. În zilele noastre, camionetele, cu
+            stiluri de caroserie quad-cab prietenoase cu familia, sunt cele mai
+            populare categorii de vehicule de pe șosea și oferă eficiență,
+            confort și capacitate mult mai bune decât strămoșii lor.
+          </p>
+          <button type="button" class="btn btn-block btn-outline-dark">
+            Truck
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img
+            class="img-fluid w-100 rounded"
+            src="https://www.motortrend.com/uploads/2023/07/Best-Resale-Value-Trucks-2023-1.jpg?fit=around%7C875:492"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center mt-5">Coupe</h1>
+          <p>
+            Pe vremea când sedanurile cu patru uși erau opțiunea practică de
+            familie, coupe-urile cu două uși erau opțiunea mai sportivă, la
+            modă. Pe măsură ce piața s-a îndreptat spre vehicule mai mari în
+            secolul 21, coupe-urile adesea mai frumoase, dar mai puțin practice,
+            au devenit mai puțin populare până la punctul în care singurele
+            exemple rămase au fost mașinile de performanță. Deoarece vehiculele
+            cu doar două uși tind să fie mai rigide și mai ușoare, mașinile de
+            înaltă performanță au fost rareori altceva decât coupe-uri. Mașinile
+            musculare, mașinile sport, hipercarurile și grand tourerele își au
+            rădăcinile cu două uși și sunt rareori văzute cu alte machete.
+            Producătorii de automobile aplică uneori termenul "coupe" SUV-urilor
+            și sedanurilor cu patru uși, cu linii de acoperiș mai rakish,
+            sportive și mai elegante.
+          </p>
+          <button type="button" class="btn btn-block btn-outline-dark">
+            Coupe
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img
+            class="img-fluid w-100 rounded"
+            src="https://www.motortrend.com/uploads/sites/5/2010/12/v-6-coupe-comparison.jpg?fit=around%7C875:492"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center mt-5">Van</h1>
+          <p>
+            În timp ce coupe-urile sunt despre stil mai presus de practic,
+            furgonetele sunt opusul. Acești cai de povară variază de la
+            furgonete de marfă pe bază de cadre până la monovolume somptuos de
+            confortabile. Acesta din urmă a fost cândva vehiculul de familie
+            preferat înainte de ascensiunea SUV-ului. Caracteristici precum
+            scaunele pliabile sau configurabile și ușile glisante fac ca aceste
+            vehicule să fie excelente pentru deplasarea oamenilor și a
+            echipamentelor. În general, ei profită la maximum de amprenta lor,
+            ceea ce duce la un alt tip de stil propriu.
+          </p>
+          <button type="button" class="btn btn-block btn-outline-dark">
+            Van
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img
+            class="img-fluid w-100 rounded"
+            src="https://www.motortrend.com/uploads/sites/5/2015/01/2014-2015-midsize-family-vans-front-three-quarter-turn-02.jpg?fit=around%7C875:492"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center mt-5">Hybrid</h1>
+          <p>
+            Un hibrid este orice vehicul care este propulsat de două surse
+            diferite de energie, în general electricitate și benzină. Aceste
+            vehicule folosesc în general motorul pe benzină pentru a încărca
+            bateriile de la care motoarele electrice se alimentează, deși
+            hibrizii plug-in se pot încărca și de la o priză de perete sau de la
+            o stație de încărcare la fel ca o mașină complet electrică.
+            Motoarele electrice sunt mult mai eficiente decât motoarele cu
+            ardere internă, astfel încât atunci când un vehicul hibrid se
+            bazează pe acea propulsie electrică, poate obține o economie mare de
+            combustibil. Mulți hibrizi pot funcționa exclusiv cu energie
+            electrică pe distanțe scurte, permițându-vă să faceți comisioane
+            fără a utiliza deloc benzină.
+          </p>
+          <button type="button" class="btn btn-block btn-outline-dark">
+            Hybrid
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img
+            class="img-fluid w-100 rounded"
+            src="https://www.motortrend.com/uploads/sites/5/2013/04/Toyota-and-Lexus-Hybrids.jpg?fit=around%7C875:492"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center mt-5">Electric Car (EV)</h1>
+          <p>
+            Pentru moment, tratăm mașinile complet electrice ca pe propria lor
+            categorie, dar toate indicațiile indică faptul că aproape fiecare
+            tip de mașină va deveni electrică la un moment dat în următoarele
+            decenii. Vehiculele electrice sau EV-urile profită din plin de
+            avantajele dramatice ale eficienței motoarelor electrice. Vehiculele
+            electrice au început deja să îmbunătățească fiecare tip de mașină:
+            sunt mai rapide, dar mai eficiente, mult mai ieftine de "alimentat",
+            dar capabile să se încarce acasă și permit soluții inventive de
+            ambalare care sporesc spațiul interior, siguranța și
+            manevrabilitatea. Provocările persistente includ costul ridicat și
+            greutatea bateriilor și lipsa unei infrastructuri comune de
+            încărcare fiabile, deși toate acestea sunt în curs de abordare de
+            către industrie în ansamblu.
+          </p>
+          <button type="button" class="btn btn-block btn-outline-dark">
+            Electric Car (EV)
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img
+            class="img-fluid w-100 rounded"
+            src="https://www.motortrend.com/uploads/sites/5/2019/12/Longest-Range-Electric-Cars-of-2020.jpg?fit=around%7C875:492"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center mt-5">Hatchback</h1>
+          <p>
+            În mod stereotipic, hatchback-urile sunt ieftine și vesele, practice
+            și mici. În realitate, în ciuda trecerii la SUV-uri crossover din ce
+            în ce mai mari, un hatchback compact modern oferă o mare parte din
+            utilitatea unui SUV de dimensiuni similare la un preț mai mic, cu o
+            eficiență mai mare. Unele crossovere compacte mai noi au început să
+            estompeze linia dintre hatchback-ul mare și SUV-ul mic. Vagoanele
+            sunt modele de mașini cu același accent practic, dar în general par
+            mai lungi și mai puțin verticale. Shooting brakes sunt vehicule
+            asemănătoare unui coupe, cu un vagon / hatchback în spate.
+          </p>
+          <button type="button" class="btn btn-block btn-outline-dark">
+            Hatchback
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img
+            class="img-fluid w-100 rounded"
+            src="https://www.motortrend.com/uploads/sites/5/2020/08/Best-Compact-Hatchbacks-To-Buy-In-2020.jpg?fit=around%7C875:492"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center mt-5">Luxury SUV</h1>
+          <p>
+            Confortul suplimentar și insignele fanteziste permit producătorilor
+            auto să crească marjele de profit, dar cele mai bune vehicule de lux
+            merită de fapt banii. Categoriile de lux oferă aceleași stiluri de
+            corp ca și omologii lor standard, dar piețele pe care le servesc
+            sunt considerabil diferite. Așa cum prețurile sunt mai mari, la fel
+            sunt și standardele pentru materiale, potrivire și finisare și
+            rafinament general. Indiferent dacă sunt unibody sau body-on-frame,
+            SUV-urile moderne de lux se ridică la înălțimea numelui lor.
+          </p>
+          <button type="button" class="btn btn-block btn-outline-dark">
+            Luxury SUV
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img
+            class="img-fluid w-100 rounded"
+            src="https://www.motortrend.com/uploads/2023/02/Luxury-Plug-in-Hybrid-SUVs.jpg?fit=around%7C875:492"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center mt-5">Luxury Car</h1>
+          <p>
+            Un preț mai mare pe piață ar putea diferenția o mașină de lux de un
+            sedan sau hatchback mai utilitar. Cu toate acestea, adevărata
+            caracteristică a unui tip de mașină de lux este că face viața mai
+            ușoară pentru ocupanții săi printr-o serie de caracteristici care nu
+            au fost încă văzute pe vehiculele pentru mase. Diferite mărci de lux
+            au avut un succes mixt cu acest lucru de-a lungul anilor, dar
+            invariabil tehnologia care se termină în orice începe în aceste
+            vehicule de ultimă generație, candidatul probabil al tehnologiei
+            viitoare de astăzi fiind capacitățile de conducere semi-autonome
+            dezvoltate în vehiculele high-end.
+          </p>
+          <button type="button" class="btn btn-block btn-outline-dark">
+            Luxury Car
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img
+            class="img-fluid w-100 rounded"
+            src="https://www.motortrend.com/uploads/2022/05/Best-Used-Luxury-Cars-Cover.jpg?fit=around%7C875:492"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center mt-5">Sports Car</h1>
+          <p>
+            În timp ce toată lumea are nevoie de o metodă de mișcare, mulți
+            doresc ca această metodă să-și miște inima, precum și corpul.
+            Mașinile sport sunt stilizate și construite pentru a aduce bucurie
+            șoferilor (și spectatorilor). Această bucurie nu poate fi replicată
+            cu ușurință de vehicule mai practice. Deși numărul lor a scăzut,
+            mașinile sport la prețuri accesibile continuă să existe. Aceste
+            tipuri de mașini reprezintă o mică parte din piața globală, dar pot
+            fi subdivizate în continuare în vehicule care corespund gusturilor
+            șoferilor. Mașinile sport clasice sunt bisturie ușoare și agile,
+            mașinile musculare doboară ciocanul cu putere și atitudine, iar
+            supercarurile demonstrează extremele performanței și
+            dezirabilității.
+          </p>
+          <button type="button" class="btn btn-block btn-outline-dark">
+            Sports Car
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img
+            class="img-fluid w-100 rounded"
+            src="https://www.motortrend.com/uploads/sites/25/2017/06/2017-Toyota-86-vs-2017-Mazda-MX-5-Miata-RF-Head-2-Head-2.jpg?fit=around%7C875:492"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text-center mt-5">Convertible</h1>
+          <p>
+            Acest stil de caroserie auto vă permite să renunțați la partea
+            superioară, depozitând acoperișul pentru fericirea vântului în păr
+            atunci când vremea o permite. Unele decapotabile folosesc un
+            acoperiș tradițional din țesătură sau vinil, în timp ce altele cu
+            vârfuri dure pliabile folosesc origami din tablă pentru a lăsa
+            lumina soarelui să intre. Cele mai comune tipuri de mașini cu
+            vârfuri decapotabile sunt mașinile cu două uși și mașinile sport,
+            deși sunt disponibile și SUV-uri și camionete cu soft top-uri
+            concepute pentru a fi abandonate.
+          </p>
+          <button type="button" class="btn btn-block btn-outline-dark">
+            Convertible
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img
+            class="img-fluid w-100 rounded"
+            src="https://www.motortrend.com/uploads/sites/5/2013/06/Luxury-Convertible-Comparison-rear-views-in-motion.jpg?fit=around%7C875:492"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="accordion" class="container mt-5 mb-5">
+      <div class="card">
+        <div class="card-header">
+          <a
+            class="collapsed card-link"
+            data-toggle="collapse"
+            href="#collapse"
+          >
+            Care este cel mai comun tip de mașină?
+          </a>
+        </div>
+        <div id="collapse" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <p>
+                  SUV-urile și subtipurile lor crossover au cele mai multe
+                  categorii din orice tip de mașină, deși camioanele se vând cel
+                  mai bine. Există peste o duzină de subtipuri de SUV-uri, în
+                  timp ce camionetele vin pur și simplu în varietăți compacte,
+                  mijlocii, de dimensiuni mari și grele. SUV-urile și camioanele
+                  reprezintă marea majoritate a tipurilor de mașini văzute pe
+                  drumurile americane.
+                </p>
+              </div>
+              <div class="col-lg-6 d-flex justify-content-end">
+                <img
+                  class="img-fluid w-100 rounded"
+                  src="https://www.motortrend.com/uploads/sites/11/2020/11/The-10-Cheapest-Best-Looking-Compact-SUVs.jpg?fit=around%7C875:492"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="col justify-content-center align-items-center bg-white mb-3"
+        >
+          <div class="text-white">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Utilizator</th>
+                  <th scope="col">Nota Site <i class="fas fa-star"></i></th>
+                  <th scope="col">Recenzie</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Popescu Ion</td>
+                  <td>5/5</td>
+                  <td>Daca nu era acest site nu stiam ce masina conduc.</td>
+                </tr>
+                <tr>
+                  <td>Maria Andreea</td>
+                  <td>1/5</td>
+                  <td>
+                    Nu mi plac masinile, eu merg cu bicicleta, in plus site ul e
+                    urat.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Razvan Dumitru</td>
+                  <td>2/5</td>
+                  <td>Macar daca foloseai bootstrap 5.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sfarsit Content-->
+
+    <footer class="bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mt-5">
+            <h4>Contact Us</h4>
+            <p>
+              <strong>Address:</strong> Calea Sperantei nr.5, Iasi, Romania<br />
+              <strong>Email:</strong> contact@example.com<br />
+              <strong>Phone:</strong> +40787864647
+            </p>
+          </div>
+          <div class="col-lg-6 mt-5">
+            <h4 class="h5">Copyright &copy; 2023 Astefanoai Eduard</h4>
+            <p>All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
