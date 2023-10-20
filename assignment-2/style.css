@@ -1,0 +1,53 @@
+.homepage-content-text {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  text-indent: 30px;
+}
+
+.homepage-button-text {
+  font-weight: 600 !important;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  text-indent: 30px;
+}
+
+.header-logo:hover {
+  color: rgb(185, 185, 185) !important;
+}
+
+.header-logo {
+  color: rgb(248, 249, 250) !important;
+  font-weight: bold !important;
+  font-size: 24px !important;
+}
+
+.header-link:hover {
+  color: rgb(207, 207, 207) !important;
+}
+
+.header-link {
+  color: rgb(248, 249, 250) !important;
+  font-weight: 500 !important;
+}
+
+.fuelcomputer-desc {
+  font-size: 18px;
+}
+
+.fuelcomputer-desc > p:first-of-type {
+  text-indent: 30px;
+}
+
+@media (max-width: 992px) {
+  .carousel-inner img {
+    width: 100%;
+    max-height: 100vw;
+    object-fit: cover;
+  }
+}
+
+.cartype-img {
+  height: auto;
+}

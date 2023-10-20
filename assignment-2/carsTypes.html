@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Pagina mea HTML</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -14,13 +15,28 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <!--Inceput Header-->
     <header>
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="index.html">CarsIte</a>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3">
+        <a class="navbar-brand header-logo" href="index.html">CarTFC</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,17 +52,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="carsTypes.html"
+              <a class="nav-link header-link" href="carsTypes.html"
                 >Tipuri de masini</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" toggle="tooltip" title="In progress!" href="#"
+              <a
+                class="nav-link header-link"
+                toggle="tooltip"
+                title="In progress!"
+                href="#"
                 >Vanzari</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" toggle="tooltip" title="In progress!" href="#"
+              <a class="nav-link header-link" href="fuelComputer.html"
                 >Calculator carburant</a
               >
             </li>
@@ -68,7 +88,7 @@
                   data-toggle="modal"
                   data-target="#signInModal"
                 >
-                  Sign in
+                  Sign up
                 </button>
               </div>
               <!-- Login Modal -->
@@ -157,7 +177,7 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalCenterTitle">
-                        Sign in form
+                        Sign up form
                       </h5>
                       <button
                         type="button"
@@ -212,7 +232,7 @@
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
                       <button type="button" class="btn btn-dark">
-                        Sign in
+                        Sign up
                       </button>
                     </div>
                   </div>
@@ -226,63 +246,17 @@
     </header>
     <!--Sfarsit Header-->
 
-    <!--Intro-->
-    <div>
-      <div id="demo" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-
-        <!-- The carousel -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              width="100%"
-              height="700px"
-              src="https://www.motortrend.com/uploads/2023/09/every-type-of-car-motortrend.jpg?fit=around%7C875:492"
-              alt="car-1"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              width="100%"
-              height="700px"
-              src="https://www.motortrend.com/uploads/sites/21/2020/08/009-2021-dodge-durango-line-up.jpg?interpolation=lanczos-none&fit=around%7C660:371?fit=around%7C875:492"
-              alt="car-2"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              width="100%"
-              height="700px"
-              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/vehicle-types-1548954237.jpg"
-              alt="car-3"
-            />
-          </div>
-        </div>
-
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-      </div>
-    </div>
     <section class="jumbotron text-center">
       <div class="container">
         <h1 style="font-weight: 400">Descopera fiecare tip de masina</h1>
       </div>
     </section>
-    <!--Sfarsit intro-->
 
     <!--Content-->
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-center mt-5">SUV</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="text-center">SUV</h1>
           <p>
             De departe cel mai popular stil de caroserie, SUV-urile sunt
             apreciate pentru versatilitatea lor. Ca și alte tipuri de mașini,
@@ -302,7 +276,7 @@
             SUV
           </button>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col-lg-6 d-flex justify-content-end cartype-img">
           <img
             class="img-fluid w-100 rounded"
             src="https://www.motortrend.com/uploads/2023/02/Plugin-Hybrid-SUVs.jpg?fit=around%7C875:492"
@@ -312,9 +286,9 @@
     </div>
 
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-center mt-5">Sedan</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="text-center">Sedan</h1>
           <p>
             Înainte ca SUV-urile crossover să preia drumul, sedanul cu patru uși
             era tipul de vehicul predominant. În mod tradițional, sedanurile
@@ -330,7 +304,7 @@
             Sedan
           </button>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col-lg-6 d-flex justify-content-end cartype-img">
           <img
             class="img-fluid w-100 rounded"
             src="https://www.motortrend.com/uploads/sites/5/2017/02/High-Performance-Sports-Sedans-front-three-quarter-02-e1488226122368.jpg?fit=around%7C875:492"
@@ -340,9 +314,9 @@
     </div>
 
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-center mt-5">Truck</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="text-center">Truck</h1>
           <p>
             În timp ce SUV-urile au cel mai mare număr de variante pe șosele,
             modelele de camioane le depășesc în S.U.A. Din punct de vedere
@@ -360,7 +334,7 @@
             Truck
           </button>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col-lg-6 d-flex justify-content-end cartype-img">
           <img
             class="img-fluid w-100 rounded"
             src="https://www.motortrend.com/uploads/2023/07/Best-Resale-Value-Trucks-2023-1.jpg?fit=around%7C875:492"
@@ -369,9 +343,9 @@
       </div>
     </div>
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-center mt-5">Coupe</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="text-center">Coupe</h1>
           <p>
             Pe vremea când sedanurile cu patru uși erau opțiunea practică de
             familie, coupe-urile cu două uși erau opțiunea mai sportivă, la
@@ -391,7 +365,7 @@
             Coupe
           </button>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col-lg-6 d-flex justify-content-end cartype-img">
           <img
             class="img-fluid w-100 rounded"
             src="https://www.motortrend.com/uploads/sites/5/2010/12/v-6-coupe-comparison.jpg?fit=around%7C875:492"
@@ -400,9 +374,9 @@
       </div>
     </div>
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-center mt-5">Van</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="text-center">Van</h1>
           <p>
             În timp ce coupe-urile sunt despre stil mai presus de practic,
             furgonetele sunt opusul. Acești cai de povară variază de la
@@ -418,7 +392,7 @@
             Van
           </button>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col-lg-6 d-flex justify-content-end cartype-img">
           <img
             class="img-fluid w-100 rounded"
             src="https://www.motortrend.com/uploads/sites/5/2015/01/2014-2015-midsize-family-vans-front-three-quarter-turn-02.jpg?fit=around%7C875:492"
@@ -427,9 +401,9 @@
       </div>
     </div>
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-center mt-5">Hybrid</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="text-center">Hybrid</h1>
           <p>
             Un hibrid este orice vehicul care este propulsat de două surse
             diferite de energie, în general electricitate și benzină. Aceste
@@ -448,7 +422,7 @@
             Hybrid
           </button>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col-lg-6 d-flex justify-content-end cartype-img">
           <img
             class="img-fluid w-100 rounded"
             src="https://www.motortrend.com/uploads/sites/5/2013/04/Toyota-and-Lexus-Hybrids.jpg?fit=around%7C875:492"
@@ -457,9 +431,9 @@
       </div>
     </div>
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-center mt-5">Electric Car (EV)</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="text-center">Electric Car (EV)</h1>
           <p>
             Pentru moment, tratăm mașinile complet electrice ca pe propria lor
             categorie, dar toate indicațiile indică faptul că aproape fiecare
@@ -479,7 +453,7 @@
             Electric Car (EV)
           </button>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col-lg-6 d-flex justify-content-end cartype-img">
           <img
             class="img-fluid w-100 rounded"
             src="https://www.motortrend.com/uploads/sites/5/2019/12/Longest-Range-Electric-Cars-of-2020.jpg?fit=around%7C875:492"
@@ -488,9 +462,9 @@
       </div>
     </div>
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-center mt-5">Hatchback</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="text-center">Hatchback</h1>
           <p>
             În mod stereotipic, hatchback-urile sunt ieftine și vesele, practice
             și mici. În realitate, în ciuda trecerii la SUV-uri crossover din ce
@@ -506,7 +480,7 @@
             Hatchback
           </button>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col-lg-6 d-flex justify-content-end cartype-img">
           <img
             class="img-fluid w-100 rounded"
             src="https://www.motortrend.com/uploads/sites/5/2020/08/Best-Compact-Hatchbacks-To-Buy-In-2020.jpg?fit=around%7C875:492"
@@ -515,9 +489,9 @@
       </div>
     </div>
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-center mt-5">Luxury SUV</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="text-center">Luxury SUV</h1>
           <p>
             Confortul suplimentar și insignele fanteziste permit producătorilor
             auto să crească marjele de profit, dar cele mai bune vehicule de lux
@@ -532,7 +506,7 @@
             Luxury SUV
           </button>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col-lg-6 d-flex justify-content-end cartype-img">
           <img
             class="img-fluid w-100 rounded"
             src="https://www.motortrend.com/uploads/2023/02/Luxury-Plug-in-Hybrid-SUVs.jpg?fit=around%7C875:492"
@@ -541,9 +515,9 @@
       </div>
     </div>
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-center mt-5">Luxury Car</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="text-center">Luxury Car</h1>
           <p>
             Un preț mai mare pe piață ar putea diferenția o mașină de lux de un
             sedan sau hatchback mai utilitar. Cu toate acestea, adevărata
@@ -560,7 +534,7 @@
             Luxury Car
           </button>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col-lg-6 d-flex justify-content-end cartype-img">
           <img
             class="img-fluid w-100 rounded"
             src="https://www.motortrend.com/uploads/2022/05/Best-Used-Luxury-Cars-Cover.jpg?fit=around%7C875:492"
@@ -569,9 +543,9 @@
       </div>
     </div>
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-center mt-5">Sports Car</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="text-center">Sports Car</h1>
           <p>
             În timp ce toată lumea are nevoie de o metodă de mișcare, mulți
             doresc ca această metodă să-și miște inima, precum și corpul.
@@ -590,7 +564,7 @@
             Sports Car
           </button>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col-lg-6 d-flex justify-content-end cartype-img">
           <img
             class="img-fluid w-100 rounded"
             src="https://www.motortrend.com/uploads/sites/25/2017/06/2017-Toyota-86-vs-2017-Mazda-MX-5-Miata-RF-Head-2-Head-2.jpg?fit=around%7C875:492"
@@ -599,9 +573,9 @@
       </div>
     </div>
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-center mt-5">Convertible</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="text-center">Convertible</h1>
           <p>
             Acest stil de caroserie auto vă permite să renunțați la partea
             superioară, depozitând acoperișul pentru fericirea vântului în păr
@@ -617,7 +591,7 @@
             Convertible
           </button>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col-lg-6 d-flex justify-content-end cartype-img">
           <img
             class="img-fluid w-100 rounded"
             src="https://www.motortrend.com/uploads/sites/5/2013/06/Luxury-Convertible-Comparison-rear-views-in-motion.jpg?fit=around%7C875:492"
@@ -639,8 +613,8 @@
         </div>
         <div id="collapse" class="collapse" data-parent="#accordion">
           <div class="card-body">
-            <div class="row">
-              <div class="col-lg-6">
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
                 <p>
                   SUV-urile și subtipurile lor crossover au cele mai multe
                   categorii din orice tip de mașină, deși camioanele se vând cel
@@ -651,7 +625,7 @@
                   drumurile americane.
                 </p>
               </div>
-              <div class="col-lg-6 d-flex justify-content-end">
+              <div class="col-lg-6 d-flex justify-content-end cartype-img">
                 <img
                   class="img-fluid w-100 rounded"
                   src="https://www.motortrend.com/uploads/sites/11/2020/11/The-10-Cheapest-Best-Looking-Compact-SUVs.jpg?fit=around%7C875:492"
@@ -664,7 +638,7 @@
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div
           class="col justify-content-center align-items-center bg-white mb-3"
         >
@@ -706,8 +680,8 @@
 
     <footer class="bg-dark text-light">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mt-5">
+        <div class="row py-5">
+          <div class="col-lg-6">
             <h4>Contact Us</h4>
             <p>
               <strong>Address:</strong> Calea Sperantei nr.5, Iasi, Romania<br />
@@ -715,8 +689,8 @@
               <strong>Phone:</strong> +40787864647
             </p>
           </div>
-          <div class="col-lg-6 mt-5">
-            <h4 class="h5">Copyright &copy; 2023 Astefanoai Eduard</h4>
+          <div class="col-lg-6 text-lg-right">
+            <h4>Copyright &copy; 2023 Astefanoai Eduard</h4>
             <p>All rights reserved.</p>
           </div>
         </div>
